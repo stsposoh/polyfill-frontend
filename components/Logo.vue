@@ -1,0 +1,65 @@
+<template>
+    <div class="logo">
+        <div class="logo__decor fade-in-right"></div>
+        <span class="logo__title animation fade-in-down">Посохов Станислав</span> 
+        <span class="logo__desc animation fade-in-up">web developer</span>
+    </div>
+</template>
+
+<style lang="stylus">
+
+@import '~assets/styles/variables'
+
+.logo
+    width 90%
+    max-width 455px
+    position: absolute;
+    z-index 4
+    left: 6%;
+    top: 50%;
+    transform: translate(0, -50%);
+    color white
+    font-weight bold
+
+    @media mq_desktop
+        left: 11%;
+
+    &__decor
+        position absolute
+        top 11px
+        left 0
+        border 9px solid accent-color
+        width 25px
+        height 68px
+
+        @media mq_desktop
+            top 14px
+            width 28px
+            height 100px
+
+    &__title
+        width 100%
+        padding: 4px 17px 4px 35px;
+        font-size 30px
+        line-height 43px
+        letter-spacing 7px
+        display inline-block
+        text-transform uppercase
+
+        @media mq_desktop
+            line-height 61px
+            padding 4px 42px
+            font-size 50px
+
+    &__desc
+        width 100%
+        color #d3d2d2
+        letter-spacing 8px
+        font-size 20px
+        display inline-block
+
+        @media mq_desktop
+            font-size 27px
+            line-height: 27px;
+
+</style>

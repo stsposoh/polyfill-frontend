@@ -1,0 +1,25 @@
+@import '~assets/styles/variables'
+
+normalize_list()
+  padding 0
+  margin 0
+  list-style-type none
+
+
+clear_display_inlines()
+  font-size 0
+
+  > *
+    vertical-align top
+    display inline-block
+    font-size font_size
+
+
+font_size_line_height(fs)
+  font-size fs
+  line-height fs + (fs / 1.5)
+
+
+truncate_text()
+  text-overflow ellipsis
+  overflow hidden
