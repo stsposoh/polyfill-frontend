@@ -1,8 +1,16 @@
 <template>
   <div class="arrow-down">
-    <a class="arrow-down__btn animation float js-smooth-to" href="#aboutme-scroll"></a>
+    <a class="arrow-down__btn animation float" href="#" v-scroll-to="'#aboutme'"></a>
   </div>
 </template>
+
+<script>
+import Vue from 'vue'
+import VueScrollTo from 'vue-scrollto'
+Vue.use(VueScrollTo)
+
+export default {}
+</script>
 
 <style lang="stylus">
 

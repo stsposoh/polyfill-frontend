@@ -22,9 +22,7 @@ module.exports = {
   css: [
     '~assets/styles/common.styl'
   ],
-  js: [
-    '~assets/scripts/common.js'
-  ],
+
   /*
   ** Customize the progress bar color
   */
