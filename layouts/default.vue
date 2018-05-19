@@ -11,12 +11,35 @@
 
         <nuxt/>
 
-        <div class="image-zoom">
-            <div class="image-zoom__hider" @click="closeModal"></div>
-            <div class="image-zoom__cont">
-                <img  class="image-zoom__img" src="#" alt="">
+        <footer class="footer">
+            <scrollactive>
+                <a href="#header" class="footer__on-top scrollactive-item" title="На верх"></a>
+            </scrollactive>
+            <a class="footer__social" href="https://github.com/stsposoh" target="_blank" title="github">
+                <img src="/icons-cont/GitHub circle.svg" alt="GitHub">
+            </a>
+            <a class="footer__social" href="https://ru.linkedin.com/in/sposokhov" target="_blank" title="linkedin">
+                <img src="/icons-cont/Linked in.svg" alt="Linked in">
+            </a>
+            <a class="footer__social" href="https://www.facebook.com/posohovstas" target="_blank" title="facebook">
+                <img src="/icons-cont/facebook.svg" alt="facebook">
+            </a>
+            <a class="footer__social" href="https://moikrug.ru/polyfill" target="_blank" title="moikrug">
+                <img src="/icons-cont/MoiKrug.svg" alt="MoiKrug">
+            </a>
+
+            <p>&copy; <a href="http://polyfill.ru">Posokhov Stanislav</a></p>
+
+            <div class="image-zoom">
+                <div class="image-zoom__hider" @click="closeModal"></div>
+                <div class="image-zoom__cont">
+                    <img  class="image-zoom__img" src="#" alt="">
+                </div>
             </div>
-        </div>
+
+            
+
+        </footer>
     </div>
 </template>
 
@@ -38,38 +61,7 @@
                 e.target.parentNode.classList.toggle("image-zoom--active");
                 document.body.style.overflow = 'auto';
             }
-        },
-
-        mounted() {
-
-
-
-
-            this.$nextTick( () => {
-
-
-                
-
-
-                
-
-
-
-    //Make the node not clickable
-    let notLinkElements = document.querySelectorAll('.not-link');
-
-    for (let i = 0; i < notLinkElements.length; i++) {
-        notLinkElements[i].addEventListener('click', function (e) {
-            e.preventDefault();
-        })
-    }
-
-
-
-               
-            })
-        },
-      
+        }
     }
 </script>
 
@@ -188,5 +180,56 @@
         &__img
             max-width: 100%;
             height: auto;
+
+
+
+    .footer
+        padding 50px 0
+        text-align center
+        background-color: bg_black;
+
+        &__on-top
+            margin auto
+            margin-bottom 15px
+            margin-top 0
+            width 60px
+            height 34px
+            background url(/base/top.png) no-repeat center
+            cursor pointer
+
+        &__social
+            width 30px
+            margin 0 10px
+        p
+            margin-bottom: 20px
+            margin-top 15px
+            font-size .9rem
+
+        a
+            display inline-block
+            color #6d6d6d
+            text-decoration none
+            transition color .3s ease
+
+            svg
+                width 30px
+                height 30px
+
+                path
+                    fill #6d6d6d
+                    transition fill .3s ease
+
+            &:hover
+                path
+                    fill white
+                    transition fill .3s ease
+
+            @media mq_desktop
+                &:hover
+                    color white
+                    transition color .3s ease
+
+        &__social
+            margin 0 10px
 
 </style>

@@ -5,7 +5,7 @@
                 <a class="slab__back-zoom" :href="imgSrcBig" @click.prevent="imageZoom">Увеличить</a>
                 <p>{{desc}}</p>
             </div>
-            <a class="slab__works work1" :href="linkTo" target="_blank" :style="{ background: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('${imgSrcSmall}')` }">
+            <a class="slab__works" :class="{'--not-link': !linkTo}" :href="linkTo" target="_blank" @click="preventDefaultIfNotLinked" :style="{ background: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('${imgSrcSmall}')` }">
                 <span>{{siteName}}</span>
             </a>
         </div>
@@ -43,6 +43,12 @@
 
                 document.body.style.overflow = 'hidden';
                 modal.classList.toggle("image-zoom--active");
+            },
+
+            preventDefaultIfNotLinked(e) {
+                if(!this.linkTo) {
+                    e.preventDefault();
+                }
             }
         }
     }
@@ -144,6 +150,9 @@
                 background-position: bottom
                 transform: rotateX(90deg)
                 transform-origin: bottom
+
+            &.--not-link
+                cursor default
 
             span
                 color: white

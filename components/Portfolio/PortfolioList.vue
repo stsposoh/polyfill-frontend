@@ -22,7 +22,7 @@
         data() {
             return {
                 portfolio: [
-                    {siteName: 'fortuna', linkTo: '', imgSrcSmall: '/portfolio/fortuna_small.png', imgSrcBig: '/portfolio/fortuna_big.png', desc: ''},
+                    {siteName: 'fortuna', linkTo: 'http://fortuna-design.com/', imgSrcSmall: '/portfolio/fortuna_small.png', imgSrcBig: '/portfolio/fortuna_big.png', desc: ''},
                     {siteName: 'arbowork.com', linkTo: 'https://arbowork.com/', imgSrcSmall: '/portfolio/arbo_small.png', imgSrcBig: '/portfolio/arbo_big.png', desc: ''},
                     {siteName: 'temple', linkTo: '', imgSrcSmall: '/portfolio/temple_small.png', imgSrcBig: '/portfolio/temple_big.png', desc: ''},
                     {siteName: 'prostokuhni.com', linkTo: 'http://prostokuhni.com/', imgSrcSmall: '/portfolio/kuchni_small.png', imgSrcBig: '/portfolio/kuchni_big.png', desc: ''},

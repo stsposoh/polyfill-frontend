@@ -71,6 +71,9 @@
         @media only screen and (max-height: 570px)
             top: 75px
 
+        @media mq_desktop
+            overflow-y: hidden;
+
         &__item
             padding: 5px 10px;
 

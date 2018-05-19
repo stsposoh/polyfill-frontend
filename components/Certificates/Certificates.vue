@@ -1,14 +1,14 @@
 <template>
     <div class="certificates">
-        <div class="certificates__nav-wrap">
-            <div 
+        <ul class="certificates__nav-list">
+            <li 
                 class="certificates__nav-item"
                 :class="{'--active': i === active}"
                 @click="changeTab(i)" 
                 v-for="(label, i) in Tabs.labels"
                 :key="i"
-            >{{label}}</div>
-        </div>
+            >{{label}}</li>
+        </ul>
         <div class="certificates__cont" ref="container">
             <div class="certificates__wrapper" ref="wrapper">
                 <slot />
@@ -82,8 +82,9 @@
 
     .certificates
 
-        &__nav-wrap
-            display: flex;
+        &__nav-list
+            normalize_list()
+            clear_display_inlines()
 
         &__nav-item
             margin 0 20px 30px
@@ -114,7 +115,8 @@
             will-change: transform;
             transition: -webkit-transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
             transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
-            transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1), -webkit-transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
+            transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1), 
+            -webkit-transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
 
 </style>
 

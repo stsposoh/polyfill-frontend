@@ -134,16 +134,19 @@
             </div>
         </section>
 
-        <section id="contacts" class="card"></section>
-
-
-
-
-
-
-
-
-
+        <section id="contacts" class="card">
+            <div class="card__content">
+                <card-title dark title="Контакты" desc="Всегда на связи" /> 
+                <div class="contacts cols">
+                    <div class="contacts__left cols--2">
+                        <contacts-info />
+                    </div>
+                    <div class="contacts__right cols--2">
+                        <contact-form />
+                    </div>
+                </div>
+            </div>
+        </section>
   </main>
 </template>
 
@@ -157,6 +160,8 @@
     import PortfolioList from '~/components/Portfolio/PortfolioList.vue'
     import Certificates from '~/components/Certificates/Certificates.vue'
     import Certificate from '~/components/Certificates/Certificate.vue'
+    import ContactsInfo from '~/components/ContactsInfo.vue'
+    import ContactForm from '~/components/ContactForm.vue'
 
     Vue.use(VueImg)
     Vue.use(VueScrollactive)
@@ -168,7 +173,9 @@
             Technologia,
             PortfolioList,
             Certificates,
-            Certificate
+            Certificate,
+            ContactsInfo,
+            ContactForm
         },
         data() {
             return {
@@ -217,8 +224,14 @@
             padding 2px 26px
 
 
+    .cols
+        clearfix()
 
+        &--2
+            float left
+            width 100%
 
-
+            @media mq_desktop
+                width 50%
 
 </style>
