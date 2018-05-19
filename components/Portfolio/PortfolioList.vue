@@ -2,6 +2,7 @@
     <div class="portfolio">
         <ul class="portfolio__list">
             <portfolio-card v-for="item in portfolio" 
+                :key="item.id" 
                 :imgSrcBig="item.imgSrcBig" 
                 :imgSrcSmall="item.imgSrcSmall" 
                 :linkTo="item.linkTo" 

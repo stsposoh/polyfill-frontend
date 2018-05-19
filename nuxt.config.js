@@ -42,7 +42,7 @@ module.exports = {
     plugins: [
         { src: '~assets/js/experienceTimer.js', defer: 'defer' },
         { src: '~assets/js/headerBubble.js', defer: 'defer' },
-        { src: '~plugins/ga.js', defer: 'defer' }
+        { src: '~plugins/ga.js', ssr: false }
     ],
 
     /*
