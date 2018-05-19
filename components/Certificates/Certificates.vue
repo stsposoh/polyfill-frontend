@@ -64,7 +64,7 @@
         mounted() {
             this.setHeight()
             this.scrollWrapper()
-            this.debounce = _.debounce(this.setHeight, 150)
+            this.debounce = _.debounce(this.setHeight, 500)
             window.addEventListener('resize', this.debounce)
         },
         
