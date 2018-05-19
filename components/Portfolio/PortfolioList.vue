@@ -12,7 +12,7 @@
 </template>
 
 <script>
-    import PortfolioCard from '~/components/PortfolioCard.vue'
+    import PortfolioCard from '~/components/Portfolio/PortfolioCard.vue'
 
     export default {
         components: {
@@ -25,7 +25,6 @@
                     {siteName: 'fortuna', linkTo: '', imgSrcSmall: '/portfolio/fortuna_small.png', imgSrcBig: '/portfolio/fortuna_big.png', desc: ''},
                     {siteName: 'arbowork.com', linkTo: 'https://arbowork.com/', imgSrcSmall: '/portfolio/arbo_small.png', imgSrcBig: '/portfolio/arbo_big.png', desc: ''},
                     {siteName: 'temple', linkTo: '', imgSrcSmall: '/portfolio/temple_small.png', imgSrcBig: '/portfolio/temple_big.png', desc: ''},
-
                     {siteName: 'prostokuhni.com', linkTo: 'http://prostokuhni.com/', imgSrcSmall: '/portfolio/kuchni_small.png', imgSrcBig: '/portfolio/kuchni_big.png', desc: ''},
                     {siteName: 'do-dom.ru', linkTo: 'https://do-dom.ru/', imgSrcSmall: '/portfolio/dd_small.png', imgSrcBig: '/portfolio/dd_big.png', desc: 'Сайт благотворительной организации "Добрый дом"'},
                     {siteName: 'savethelife.ru', linkTo: 'http://savethelife.ru/', imgSrcSmall: '/portfolio/podari_small.png', imgSrcBig: '/portfolio/podari_big.png', desc: 'Сайт благотворительной организации "Спаси жизнь"'},

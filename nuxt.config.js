@@ -31,16 +31,17 @@ module.exports = {
     ],
     */
     css: [
-        '~assets/styles/common.styl',
-        { src: '~assets/styles/libs/test.css' }
+        '~assets/styles/common.styl'
+        // { src: '~assets/styles/libs/test.css' }
     ],
-    /*
-    build: {
-        vendor: ['mixitup']
-    },
-    */
+    
+    // build: {
+    //     vendor: ['mylib']
+    // },
+    
     plugins: [
-        { src: '~assets/js/mylib.js', defer: 'defer' }
+        { src: '~assets/js/experienceTimer.js', defer: 'defer' },
+        { src: '~assets/js/headerBubble.js', defer: 'defer' }
     ],
 
     /*

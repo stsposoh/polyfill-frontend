@@ -154,7 +154,7 @@
     import CardTitle from '~/components/CardTitle.vue'
     import EducationList from '~/components/EducationList.vue'
     import Technologia from '~/components/Technologia.vue'
-    import PortfolioList from '~/components/PortfolioList.vue'
+    import PortfolioList from '~/components/Portfolio/PortfolioList.vue'
     import Certificates from '~/components/Certificates/Certificates.vue'
     import Certificate from '~/components/Certificates/Certificate.vue'
 
