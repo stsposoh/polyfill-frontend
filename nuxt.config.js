@@ -1,48 +1,55 @@
 module.exports = {
-  /*
-  ** Headers of the page
-  */
-  head: {
-    title: 'Посохов Станислав - веб разработчик',
-    meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Сайт-портфолио веб-разработчка Посохова Станислава' }
-    ],
-    link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Raleway:400,600,700' }
-    ],
-    script: [
-      { src: 'http://polyfill.ru/js/libs.min.js', defer: 'defer' },
-      { src: 'http://polyfill.ru/js/common.js', defer: 'defer' }
-    ]
-  },
-
-  css: [
-    '~assets/styles/common.styl'
-  ],
-
-  /*
-  ** Customize the progress bar color
-  */
-  loading: { color: 'red' },
-  /*
-  ** Build configuration
-  */
-  build: {
     /*
-    ** Run ESLint on save
+    ** Headers of the page
     */
-    extend (config, ctx) {
-      if (ctx.dev && ctx.isClient) {
-        config.module.rules.push({
-          enforce: 'pre',
-          test: /\.(js|vue)$/,
-          loader: 'eslint-loader',
-          exclude: /(node_modules)/
-        })
-      }
-    }
-  }
+    head: {
+        htmlAttrs: {
+            lang: 'ru'
+        },
+        title: 'Посохов Станислав - веб разработчик',
+        meta: [
+            { charset: 'utf-8' },
+            { 'http-equiv': 'X-UA-Compatible', content: 'IE=edge' },
+            { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+            { hid: 'description', name: 'description', content: 'Сайт-портфолио веб-разработчка Посохова Станислава' },
+            { hid: 'keywords', name: 'keywords', content: 'веб разработка, верстка, создание сайтов' },
+            { hid: 'robots', name: 'robots', content: 'index, follow' },
+            { hid: 'apple-mobile-web-app-title', name: 'apple-mobile-web-app-title', content: 'Сайт-портфолио веб-разработчка Посохова Станислава' },
+            { hid: 'theme-color', name: 'theme-color', content: '#000' },
+            { hid: 'msapplication-navbutton-color', name: 'msapplication-navbutton-color', content: '#000' },
+            { hid: 'apple-mobile-web-app-status-bar-style', name: 'apple-mobile-web-app-status-bar-style', content: '#000' }
+        ],
+        link: [
+            { rel: 'dns-prefetch', href: 'http://polyfill.ru' },
+            { rel: 'shortcut icon', type: 'image/x-icon', href: '/favicon/favicon.ico' },
+            { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Raleway:400,600,700' }
+        ]
+    },
+    /*
+    script: [
+        { src: 'https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.0/mixitup.js', defer: 'defer' }
+    ],
+    */
+    css: [
+        '~assets/styles/common.styl',
+        { src: '~assets/styles/libs/test.css' }
+    ],
+    /*
+    build: {
+        vendor: ['mixitup']
+    },
+    */
+    plugins: [
+        { src: '~assets/js/mylib.js', defer: 'defer' }
+    ],
+
+    /*
+    ** Customize the progress bar color
+    */
+    loading: false
+    /*
+    ** Build configuration
+    */
 }
+
+

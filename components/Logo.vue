@@ -1,8 +1,8 @@
 <template>
     <div class="logo">
-        <div class="logo__decor fade-in-right"></div>
-        <span class="logo__title animation fade-in-down">Посохов Станислав</span> 
-        <span class="logo__desc animation fade-in-up">web developer</span>
+        <div class="logo__decor"></div>
+        <span class="logo__title">Посохов Станислав</span> 
+        <span class="logo__desc">web developer</span>
     </div>
 </template>
 

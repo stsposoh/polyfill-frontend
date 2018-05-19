@@ -1,34 +1,35 @@
 {
-  "name": "polyfill-frontend",
-  "version": "1.0.0",
-  "description": "Nuxt.js project",
-  "author": "Polyfill",
-  "private": true,
-  "scripts": {
-    "dev": "nuxt",
-    "build": "nuxt build",
-    "start": "nuxt start",
-    "generate": "nuxt generate",
-    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
-    "precommit": "npm run lint"
-  },
-  "dependencies": {
-    "nuxt": "^1.0.0-rc11",
-    "vue-scrollto": "^2.8.0"
-  },
-  "devDependencies": {
-    "babel-eslint": "^7.2.3",
-    "eslint": "^4.3.0",
-    "eslint-config-standard": "^10.2.1",
-    "eslint-loader": "^1.9.0",
-    "eslint-plugin-html": "^3.1.1",
-    "eslint-plugin-import": "^2.7.0",
-    "eslint-plugin-node": "^5.1.1",
-    "eslint-plugin-promise": "^3.5.0",
-    "eslint-plugin-standard": "^3.0.1",
-    "normalize-styl": "^4.1.1",
-    "style-loader": "^0.19.1",
-    "stylus": "^0.54.5",
-    "stylus-loader": "^3.0.1"
-  }
+    "name": "polyfill-frontend",
+    "version": "1.0.0",
+    "description": "Nuxt.js project",
+    "author": "Polyfill",
+    "private": true,
+    "scripts": {
+        "dev": "nuxt",
+        "build": "nuxt build",
+        "start": "nuxt start",
+        "generate": "nuxt generate",
+        "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+        "precommit": "npm run lint"
+    },
+    "dependencies": {
+        "normalize-styl": "^4.1.1",
+        "nuxt": "^1.0.0-rc11",
+        "v-img": "^0.1.9",
+        "vue-scrollactive": "^0.6.1"
+    },
+    "devDependencies": {
+        "babel-eslint": "^7.2.3",
+        "eslint": "^4.3.0",
+        "eslint-config-standard": "^10.2.1",
+        "eslint-loader": "^1.9.0",
+        "eslint-plugin-html": "^3.1.1",
+        "eslint-plugin-import": "^2.7.0",
+        "eslint-plugin-node": "^5.1.1",
+        "eslint-plugin-promise": "^3.5.0",
+        "eslint-plugin-standard": "^3.0.1",
+        "style-loader": "^0.19.1",
+        "stylus": "^0.54.5",
+        "stylus-loader": "^3.0.1"
+    }
 }
