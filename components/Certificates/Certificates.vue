@@ -62,10 +62,12 @@
         },
 
         mounted() {
-            this.setHeight()
-            this.scrollWrapper()
-            this.debounce = _.debounce(this.setHeight, 500)
-            window.addEventListener('resize', this.debounce)
+            window.onload = () => {
+                this.setHeight()
+                this.scrollWrapper()
+                this.debounce = _.debounce(this.setHeight, 500)
+                window.addEventListener('resize', this.debounce)
+            };
         },
         
         beforeDestroy() {
