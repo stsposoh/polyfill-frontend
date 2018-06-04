@@ -2,7 +2,7 @@ if (process.browser) {
 
 
     //experience timer
-    const myDate = '01.06.2015 00:00:00';
+    const myDate = '01.06.2016 00:00:00';
 
     let a = myDate.split(' '),
         b = a[0].split('.'),
