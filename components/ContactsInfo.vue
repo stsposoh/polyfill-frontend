@@ -3,7 +3,7 @@
         <p>Украина</p>
         <p><a href="tel:+38(099)270-76-15">+38(099) 270-76-15</a></p>
         <p><a href="mailto:stsposoh@gmail.com">stsposoh@gmail.com</a></p>
-        <p>Stas Posohov</p>
+        <p>stas.posohov</p>
         <p><a href="https://t.me/posohov">@posohov</a></p>
   </div>
 </template>

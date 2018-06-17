@@ -15,7 +15,7 @@
                     <card-title white title="Обо мне" desc="Чистый код - чистая совесть!" />
                     <img v-img class="card__avatar-img" src="/base/me_big.jpg" alt="Я">
                     <div class="card__text">
-                        <p>Веб разработкой занимаюсь с 2015 года (<span class="js-experience-timer"><span></span>
+                        <p>Веб разработкой занимаюсь с 2016 года (<span class="js-experience-timer"><span></span>
                         <span></span><span></span></span>)</p>
                         <p>English level: Pre-intermediate</p>
                         <p>Готов к командировакам/переезду</p>
