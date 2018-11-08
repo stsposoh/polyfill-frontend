@@ -23,10 +23,11 @@
         data() {
             return {
                 portfolio: [
+                    {siteName: 'agrosoyuz', linkTo: 'http://grey-fox.ru/clients/agrosoyuz/', imgSrcSmall: '/portfolio/agro_small.png', imgSrcBig: '/portfolio/agro_big.jpg', desc: ''},
+                    {siteName: 'tk-bessarabka', linkTo: 'http://tk-bessarabka.ru/', imgSrcSmall: '/portfolio/bessarabka_small.png', imgSrcBig: '/portfolio/bessarabka_big.png', desc: ''},
                     {siteName: 'fortuna', linkTo: 'http://fortuna-design.com/', imgSrcSmall: '/portfolio/fortuna_small.png', imgSrcBig: '/portfolio/fortuna_big.png', desc: ''},
                     {siteName: 'arbowork.com', linkTo: 'https://arbowork.com/', imgSrcSmall: '/portfolio/arbo_small.png', imgSrcBig: '/portfolio/arbo_big.png', desc: ''},
                     {siteName: 'temple', linkTo: '', imgSrcSmall: '/portfolio/temple_small.png', imgSrcBig: '/portfolio/temple_big.png', desc: ''},
-                    {siteName: 'prostokuhni.com', linkTo: 'http://prostokuhni.com/', imgSrcSmall: '/portfolio/kuchni_small.png', imgSrcBig: '/portfolio/kuchni_big.png', desc: ''},
                     {siteName: 'do-dom.ru', linkTo: 'https://do-dom.ru/', imgSrcSmall: '/portfolio/dd_small.png', imgSrcBig: '/portfolio/dd_big.png', desc: 'Сайт благотворительной организации "Добрый дом"'},
                     {siteName: 'savethelife.ru', linkTo: 'http://savethelife.ru/', imgSrcSmall: '/portfolio/podari_small.png', imgSrcBig: '/portfolio/podari_big.png', desc: 'Сайт благотворительной организации "Спаси жизнь"'},
                     {siteName: 'maps.me', linkTo: 'http://maps.me/', imgSrcSmall: '/portfolio/maps_me_small.png', imgSrcBig: '/portfolio/maps_me_big.png', desc: 'Новогодняя страничка для maps.me'},

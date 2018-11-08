@@ -1,6 +1,6 @@
 <template>
     <ul class="education__list">
-        <li v-for="item in education" class="education__item">
+        <li v-for="(item, key) in education" :key="key" class="education__item">
             <div class="education__item-left">{{item.course}}</div>
             <div class="education__item-right">
                 <a :href="item.link" target="_blank">{{item.school}}</a>
@@ -14,6 +14,7 @@
         data() {
             return {
                 education: [
+                    {course: 'Vue.js 2.5 Создаем сайт на Vue.JS с Firebase, Vuex и Router', link: 'https://www.udemy.com/vuejs_25/', school: 'udemy.com'},
                     {course: 'Курс JavaScript/DOM/интерфейсы', link: 'https://learn.javascript.ru/courses/js', school: 'learn.javascript.ru'},
                     {course: 'Основы веб-дизайна', link: 'https://geekbrains.ru/courses/80', school: 'GeekBrains.ru'},
                     {course: 'Git. Быстрый старт', link: 'https://geekbrains.ru/courses/66', school: 'GeekBrains.ru'},

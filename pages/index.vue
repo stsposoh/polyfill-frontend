@@ -59,9 +59,16 @@
                             <technologia src="/icons/18.svg" title="Svg" />
                             <technologia src="/icons/19.svg" title="BEM naming" />
                             <technologia src="/icons/23.svg" title="Unyson" />
+                            <technologia src="/icons/21.svg" title="Vue.js" />
+                            <technologia src="/icons/26.svg" title="NuxtJS" />
+
+                            <technologia src="/icons/Vuetify.svg" title="Vuetify" />
+                            <technologia src="/icons/21.svg" title="Vue Router" />
+                            <technologia src="/icons/21.svg" title="Vuex" />
+                            <technologia src="/icons/firebase.svg" title="Firebase" />
                         </ul>
                     </div> 
-                    <div class="skills">
+                    <!-- <div class="skills">
                         <span class="skills__line"></span>
                         <span class="skills__text">В процессе изучения:</span>
                         <span class="skills__line"></span>
@@ -80,7 +87,7 @@
                                 <technologia src="/icons/28.svg" title="modx" />
                             </ul>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </section>
 
@@ -113,28 +120,28 @@
                     <card-title white title="Сертификаты" desc="Мои сертификаты" /> 
                     <certificates>
                         <certificate label="Показать все" :active="true"> 
-                            <li v-for="certificate in certificates" class="certificates__list-item">
+                            <li v-for="(certificate, key) in certificates" :key="key" class="certificates__list-item">
                                 <span class="certificate" :data-cat="certificate.category">
                                     <img v-img class="certificate__img" :src="certificate.src" :alt="certificate.alt">
                                 </span>
                             </li>
                         </certificate>
                         <certificate label="Курсы">
-                            <li v-for="certificate in certificates" class="certificates__list-item">
+                            <li v-for="(certificate, key) in certificates" :key="key" class="certificates__list-item">
                                 <span v-if="certificate.category == 'Курсы'" class="certificate" :data-cat="certificate.category">
                                     <img v-img class="certificate__img" :src="certificate.src" :alt="certificate.alt">
                                 </span>
                             </li>
                         </certificate>
                         <certificate label="Тесты">
-                            <li v-for="certificate in certificates" class="certificates__list-item">
+                            <li v-for="(certificate, key) in certificates" :key="key" class="certificates__list-item">
                                 <span v-if="certificate.category == 'Тесты'" class="certificate" :data-cat="certificate.category">
                                     <img v-img class="certificate__img" :src="certificate.src" :alt="certificate.alt">
                                 </span>
                             </li>
                         </certificate>
                         <certificate label="Разное">
-                            <li v-for="certificate in certificates" class="certificates__list-item">
+                            <li v-for="(certificate, key) in certificates" :key="key" class="certificates__list-item">
                                 <span v-if="certificate.category == 'Разное'" class="certificate" :data-cat="certificate.category">
                                     <img v-img class="certificate__img" :src="certificate.src" :alt="certificate.alt">
                                 </span>
@@ -224,6 +231,7 @@
         data() {
             return {
                 certificates: [
+                    {src: '/cert/big/16.jpg', category: 'Курсы', alt: "udemy.com"},
                     {src: '/cert/big/15.jpg', category: 'Курсы', alt: "Learn Java Script"},
                     {src: '/cert/big/3.jpg', category: 'Курсы', alt: "Prometheus"},
                     {src: '/cert/big/5.jpg', category: 'Курсы', alt: "GeekBrains"},
