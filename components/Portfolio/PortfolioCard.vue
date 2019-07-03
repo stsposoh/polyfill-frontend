@@ -88,12 +88,10 @@
             width 255px
             height 100%
             margin: 0 17px;
-            padding 25px 15px
+            padding: 10px 15px 25px;
             text-align left
             background #f4f4f4
             overflow hidden
-            border: 1px solid #dbdbdb;
-            border-radius: 0 104px 0 0
 
             &-zoom
                 color accent-color

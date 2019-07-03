@@ -24,6 +24,7 @@
                         <p>* * *</p>
                         <p><b>Работа в команде:</b></p>
                         <p>
+                            <a href="https://tutor.ru/" target="_blank">tutor.ru</a>, <br>
                             <a href="http://www.mam4.ru" target="_blank">mam4.ru</a>, <br>
                             <a href="https://mundep.gudkov.ru/" target="_blank">mundep.gudkov.ru</a> </p>
                     </div>
